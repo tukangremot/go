@@ -1,4 +1,4 @@
-package main
+package http
 
 type HttpResponseBody struct {
 	Success bool        `json:"success"`
