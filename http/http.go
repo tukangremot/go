@@ -13,17 +13,3 @@ func BuildHttpResponseBody(success bool, message string, data interface{}) HttpR
 		Data:    data,
 	}
 }
-
-type HttpResponseBodyList struct {
-	Success bool          `json:"success"`
-	Message string        `json:"message,omitempty"`
-	Data    []interface{} `json:"data,omitempty"`
-}
-
-func BuildHttpResponseBodyList(success bool, message string, data []interface{}) HttpResponseBodyList {
-	return HttpResponseBodyList{
-		Success: success,
-		Message: message,
-		Data:    data,
-	}
-}
